@@ -1,0 +1,21 @@
+# Do not commit private case exports, evidence, credentials or generated artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.json
+!package.json
+!package-lock.json
+cases/
+exports/
+evidence/
+private/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.zip
+node_modules/
+.DS_Store
+Thumbs.db

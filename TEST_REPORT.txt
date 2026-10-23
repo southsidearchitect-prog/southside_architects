@@ -1,0 +1,23 @@
+純JavaScript邏輯檢查，2026-10-23
+PASS 16個流程項目，ID唯一
+PASS 所有新結果待確認且沒有法規預設值
+PASS 無資料不能核實
+PASS 空間查詢核實需要官方圖像
+PASS 填齊欄位符合表單完整性（非內容正確性）
+PASS 未勾逐筆覆蓋不能核實
+PASS 拒javascript網址
+PASS 多筆地號按換行與逗號分割
+PASS 匯入已核實一律退回部分核實
+PASS 匯入拒絕錯誤schema
+PASS 匯入丟棄HTML/SVG圖像
+PASS 標記座標限制0到1
+PASS 匯入最多每項4圖
+PASS 未知／原型鏈狀態不能通過
+PASS HTML字串輸出會跳脫
+PASS 不允許file和data網址成可點來源
+PASS 不改分區基準與門檻成常數判定
+
+另已通過 node --check app.js。
+未完成：真實瀏覽器操作、LocalStorage端到端、圖片上傳/標記視覺、匯入下載、PDF列印及手機版視覺驗收。
+原因：雲端Chromium啟動socket被沙箱拒絕；正常測試執行環境初始化失敗；雲端瀏覽器file://被網址政策拒絕。未繞過限制。
+這是可開啟的原型程式，不應稱正式驗收完成。未執行真實地號查詢，未串接官方API。
